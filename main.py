@@ -2,14 +2,7 @@ from kaggle_environments import make
 
 env = make("kore_fleets", debug=True)
 
-env.run(["./builder.py", "./pilot.py"])
+env.run(["./pilot_tehsin.py", "./attacker.py"])
 out = env.render(mode="ansi")
 # print(type(out))
 # print(out
-
-# from kaggle_environments import make
-
-# Inflate the response replay to visualize.
-# env = make("kore_fleets", debug=True)
-# env.run(["./do_nothing.py"])
-# env.render(mode="ipython")
