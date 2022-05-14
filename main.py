@@ -2,10 +2,10 @@ from kaggle_environments import make
 
 env = make("kore_fleets", debug=True)
 
-env.run(["./do_nothing.py"])
+env.run(["./builder.py", "./pilot.py"])
 out = env.render(mode="ansi")
-print(type(out))
-print(out)
+# print(type(out))
+# print(out
 
 # from kaggle_environments import make
 
