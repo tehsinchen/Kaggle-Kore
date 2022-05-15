@@ -1,10 +1,10 @@
+from kaggle_environments.envs.kore_fleets.helpers import Board
+
 from messanger import get_info
-from headquarter_tehsin import get_strategy
+from headquarter_tehsin import HeadQuarter
 
 
 def pilot(obs, config):
-    message, me = get_info(obs, config)
-
-    for shipyard in me.shipyards:
-        shipyard.next_action = get_strategy(message)
-    return me.next_actions
+    message = get_info(Board(obs, config))
+    hq = HeadQuarter(message)
+    return hq.get_command()

@@ -1,8 +1,13 @@
 from kore_act_api import *
 
 
-def get_strategy():
-    pass
+class HeadQuarter:
+
+    def __init__(self, message):
+        self.message = message
+    
+    def get_command(message):
+        return {}
 
 
 # def build_flight_plan(dir_idx, size):

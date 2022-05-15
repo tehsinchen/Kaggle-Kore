@@ -52,5 +52,4 @@ def agent(obs, config):
             action = ShipyardAction.spawn_ships(1)
             kore_left -= spawn_cost
         shipyard.next_action = action
-
     return me.next_actions
