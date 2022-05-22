@@ -22,6 +22,7 @@ def get_info(board):
         msg['me']["shipyard"][shipyard.id] = {}
         msg['me']["shipyard"][shipyard.id]["ship_count"] = shipyard.ship_count
         msg['me']["shipyard"][shipyard.id]["position"] = shipyard.position
+        msg['me']["shipyard"][shipyard.id]["max_spawn"] = shipyard.max_spawn
     # enimies
     for opponent in board.opponents:
         e_id = f'enemy_{opponent.id}'
